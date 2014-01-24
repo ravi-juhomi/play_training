@@ -1,0 +1,16 @@
+@(userForm: Form[User])
+
+@import helper._
+
+@main("GATHI::Sign Up"){
+<h1>Try GATHI free for 30 days</h1>
+@form(routes.UserController.save(),'id->"regForm"){
+
+@inputText(userForm("fullName"),'_label->"FullName")
+@inputText(userForm("company"),'_label->"Company")
+@inputText(userForm("email"),'_label->"Email")
+@inputText(userForm("password"),'_label->"PassWord")
+<input type="submit" value="Create" id="create"></input>
+}
+
+}

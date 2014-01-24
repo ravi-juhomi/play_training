@@ -1,0 +1,15 @@
+@(userForm:Form[User],user:User)
+@import helper._
+
+<ul>
+
+<li>@form(routes.UserController.updateUser(user.getId())){
+
+@inputText(userForm("fullName"),'_label->"FullName")
+@inputText(userForm("company"),'_label->"Company")
+@inputText(userForm("email"),'_label->"Email")
+
+<input type="submit" value="Update"></input>
+}
+</li>
+</ul>
