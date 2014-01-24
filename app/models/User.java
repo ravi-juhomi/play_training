@@ -12,7 +12,7 @@ import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
 
 @Entity
-@Table(name = "energy_link_registration")
+@Table(name = "user_registration")
 public class User extends Model {
     @Id
 	private long id;
