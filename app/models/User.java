@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 
 import play.data.validation.Constraints.Email;
@@ -11,6 +12,7 @@ import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
 
 @Entity
+@Table(name = "energy_link_registration")
 public class User extends Model {
     @Id
 	private long id;
